@@ -3,46 +3,13 @@
   height: 400px;
   width: 100%;
   background: teal;
-  margin-top: 150px;
 }
 
-#about-images {
-    border: solid 2px black;
-    margin: 10px 0;
+
+#about-images{
+  border: solid 2px black;
 }
+ 
+ 
 
  
-.wrapper-about {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-} 
-
-//*
-.wrapper-container {
-  width: 800px;
-}
-
-@media only screen and (max-width: 834px) {
-  .wrapper-container {
-    width: 100%;
-    padding: 10px 35px;
-  }
-}
-
-
-.portfolioCTA {
-  text-align: center;
-  background: teal;
-  padding: 15px;
-  margin: 35px 0;
-  color: #fff;
-  a {
-    color: #fff;
-  }
-  li {
-    font-size: 18px;
-    list-style: none;
-  }
-}

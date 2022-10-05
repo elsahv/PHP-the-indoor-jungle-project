@@ -1,29 +1,28 @@
-  <?php get_header(); ?>
-
- 
-   <section class="single-post-wrapper">
-
-  <?php if(has_post_thumbnail()): ?>
-     <div class="post-image-wrapper">
-    <img src="<?php the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>" class="single-post-img">
-    </div>
-    <?php endif; ?> 
+<?php get_header(); ?>
 
 
 
-
-    <div class="post-content-container">
-
-    <h1 class="single-post-title"><?php the_title(); ?></h1>
-    <p><?php echo get_the_date('l jS F, Y');?></p>
-
-      <?php the_content(); ?>
-    </div>
+<div class="bg-primary text-light p-4 border border-dark border-1">df</div>
 
 
-    <?php wp_link_pages(); ?>
-    </div>
+  <div class="container">
+  <div class="archive-grid-section">
+
+  
+  <section class="left-side p-5">
+          <?php get_template_part('includes/section', 'blogcontent'); ?>
+
+          <?php wp_link_pages(); ?>
+        </section>
+
+
+
+    <section class="right-side p-5 my-5 bg-danger">
+      <?php get_template_part('includes/section', 'aside'); ?>
     </section>
- 
+
+
+    </div>
+  </div>
 
 <?php get_footer(); ?>

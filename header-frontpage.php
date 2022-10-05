@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+  <html lang="en">
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Indoor Jungle Project</title>
+    <title>the Indoor Jungle Project</title>
+    <?php wp_head(); ?>
 
-    <?php wp_head();?>
-     
-</head>
-<body>
 
-<header>  
-  <h1 class="logo">
-   <a href="/">
-  The Indoor Jungle Project
-</a>
-</h1>
 
-  <?php
-  wp_nav_menu(
-    array(
-       'theme-location' => 'top-menu',
-       'menu_class' => 'top-bar',
-    )
-);
-?> 
-</header>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand" id="most-recent-frontpage-header">
+      <div class="container-fluid">
+
+        <a id="logo" class="navbar-brand pl-5" href="/">
+          <?php echo get_bloginfo('name'); ?>
+          </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+<?php
+          wp_nav_menu(
+            array(
+              'theme-location' => 'top-menu',
+              'menu_class' => 'navbar-nav',
+            )
+          );
+          ?>
+        </div>
+      </div>
+    </nav>
+

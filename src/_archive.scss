@@ -1,0 +1,48 @@
+// ASIDE
+.archive-grid-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    'ls ls ls rs';
+    
+    @media only screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'ls'
+        'rs';
+    }
+}
+
+.left-side {
+    grid-area: ls;
+}
+
+.right-side {
+    border: solid 2px black;
+    grid-area: rs;
+    li {
+        list-style: none;
+        a { 
+          color: #000;
+        }
+    }
+}
+
+
+
+// INCLUDES SECTION
+.archive-grid {
+    padding: 80px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+
+    @media only screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  padding: 20px 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    }
+}

@@ -2,7 +2,7 @@
 
 <?php
 
-	function scripts()
+function scripts()
 {
 	wp_register_style('style', get_template_directory_uri() . '/dist/app.css', [], 1, 'all');
 	wp_enqueue_style('style');
@@ -12,12 +12,10 @@
 	wp_register_script('app', get_template_directory_uri() . './dist/app.js', ['jquery'], 1, true);
 
 	wp_enqueue_script('app');
-
-
 }
 add_action('wp_enqueue_scripts', 'scripts');
 
- 
+
 
 
 
@@ -32,13 +30,13 @@ add_theme_support('widgets');
 // Menus
 register_nav_menus(
 
-		array(
+	array(
 
-			'top-menu' => 'Top Menu Location',
-			'mobile-menu' => 'Mobile Menu Location',
-			// 'footer-menu' => 'Footer Menu Location',
+		'top-menu' => 'Top Menu Location',
+		'mobile-menu' => 'Mobile Menu Location',
+		// 'footer-menu' => 'Footer Menu Location',
 
-		)
+	)
 
 );
 
@@ -47,7 +45,8 @@ register_nav_menus(
 
 
 // Custom Image Sizes
-add_image_size('blog-large', 800, 600, false);
+add_image_size('blog-fullscreen', 1920, 1200, false);
+add_image_size('blog-large', 1200, 600, false);
 add_image_size('blog-small', 500, 400, true);
 
 
@@ -56,39 +55,35 @@ add_image_size('blog-small', 500, 400, true);
 // Register Sidebars
 function my_sidebars()
 {
+	register_sidebar(
+		array(
+			'name' => 'Page Sidebar',
+			'id' => 'page-sidebar',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
 
+	register_sidebar(
+		array(
+			'name' => 'Aside Sidebar',
+			'id' => 'aside-sidebar',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
 
-			register_sidebar(
-
-						array(
-
-								'name' => 'Page Sidebar',
-								'id' => 'page-sidebar',
-								'before_title' => '<h3 class="widget-title">',
-								'after_title' => '</h3>'
-
-						)
-
-			);
-
-
-			register_sidebar(
-
-						array(
-
-								'name' => 'Blog Sidebar',
-								'id' => 'blog-sidebar',
-								'before_title' => '<h3 class="widget-title">',
-								'after_title' => '</h3>'
-
-						)
-
-			);
-
-
+	register_sidebar(
+		array(
+			'name' => 'About Sidebar',
+			'id' => '-sidebar',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
 
 }
-add_action('widgets_init','my_sidebars');
+add_action('widgets_init', 'my_sidebars');
 
 
 
@@ -105,22 +100,20 @@ function my_first_post_type()
 
 		'labels' => array(
 
-					'name' => 'Cars',
-					'singular_name' => 'Car',
+			'name' => 'Cars',
+			'singular_name' => 'Car',
 		),
 		'hierarchical' => true,                        //FALSE = POST, TRUE = PAGE
 		'public' => true,
 		'has_archive' => true,
 		'menu_icon' => 'dashicons-images-alt2',
-		'supports' => array('title', 'editor', 'thumbnail','custom-fields'),
-		'rewrite' => array('slug' => 'cars'),	
+		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+		'rewrite' => array('slug' => 'cars'),
 
 	);
 
 
 	register_post_type('cars', $args);
-
-
 }
 add_action('init', 'my_first_post_type');
 
@@ -134,21 +127,20 @@ add_action('init', 'my_first_post_type');
 function my_first_taxonomy()
 {
 
-			$args = array(
+	$args = array(
 
-					'labels' => array(
-							'name' => 'Brands',
-							'singular_name' => 'Brand',
-					),
+		'labels' => array(
+			'name' => 'Brands',
+			'singular_name' => 'Brand',
+		),
 
-					'public' => true,
-					'hierarchical' => true,               //TRUE = CATEGORY, FALSE = TAGS
+		'public' => true,
+		'hierarchical' => true,               //TRUE = CATEGORY, FALSE = TAGS
 
-			);
+	);
 
 
-			register_taxonomy('brands', array('cars'), $args);
-
+	register_taxonomy('brands', array('cars'), $args);
 }
 add_action('init', 'my_first_taxonomy');
 
@@ -375,9 +367,3 @@ add_action('init', 'my_first_taxonomy');
 
 
 // }
-
-
-
-
-
-
