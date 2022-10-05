@@ -11,22 +11,23 @@
 
 
   </head>
+
   <body>
 
-    <nav class="navbar navbar-expand border border-dark border-2" id="most-recent-header">
+    <nav class="navbar navbar-expand border border-dark border-2 pb-4" id="most-recent-header">
       <div class="container-fluid">
 
         <a id="logo" class="text-primary navbar-brand pl-5" href="/">
           <?php echo get_bloginfo('name'); ?>
-          </a>
-        
+        </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
 
-<?php
+          <?php
           wp_nav_menu(
             array(
               'theme-location' => 'top-menu',

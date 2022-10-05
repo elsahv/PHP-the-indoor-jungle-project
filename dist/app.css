@@ -10651,7 +10651,6 @@ html {
 }
 
 #most-recent-header {
-  padding-top: 70px;
   display: flex;
   justify-content: center;
   z-index: 100;
@@ -10662,11 +10661,10 @@ html {
 #most-recent-header a {
   color: #2d6a4f;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #000;
+  padding: 0 25px;
 }
 
 #most-recent-frontpage-header {
-  padding-top: 70px;
   display: flex;
   justify-content: center;
   z-index: 100;
@@ -10678,23 +10676,24 @@ html {
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   text-decoration: none;
+  padding: 0 25px;
 }
 
 #logo {
   text-transform: capitalize;
   font-size: 40px;
-  margin-left: 140px;
+  margin-left: 100px;
 }
 
 .nav-link {
   display: flex;
   justify-content: flex-end;
   font-size: 22px;
-  padding: 0 25px;
+  padding: 0 155px;
 }
 
 .navbar-nav {
-  width: 1200px;
+  width: 1000px;
   justify-content: flex-end;
 }
 
@@ -10715,7 +10714,8 @@ html {
 }
 
 #most-recent-text {
-  text-shadow: 3px 3px 3px #000;
+  text-shadow: 1px 1px 1px #000;
+  color: #fff;
 }
 
 .most-recent-title {
@@ -10723,7 +10723,7 @@ html {
 }
 
 .most-recent-excerpt {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 footer {

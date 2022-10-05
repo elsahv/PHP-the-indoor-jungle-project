@@ -18,10 +18,7 @@
         <div class="most-recent-title" id="most-recent-text"><?php the_title(); ?></div>
         <div class="most-recent-excerpt" id="most-recent-text"> <?php the_excerpt(); ?></div>
         <a href="<?php the_permalink(); ?>" class="btn btn-primary">Read More</a>
-
       </div>
-
-
 
 
     <?php endwhile; ?>

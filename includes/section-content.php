@@ -1,15 +1,16 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        
-        <!-- <div class="border border-2 border-dark bg-primary">
-        <h2 class="text-light text-center p-5"><?php the_title(); ?></h2>
-        </div> -->
+
+        <h1><?php the_title(); ?></h1>
+
+        <p><?php echo get_the_date('l jS F, Y'); ?></p>
+
+        <?php if (has_post_thumbnail()) : ?>
+            <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>" class="img-fluid mb-3 border border-dark border-2">
+        <?php endif; ?>
+
+        <?php the_content(); ?>
 
 
-        <div class="container p-5">
-            <div class="p-5">
-                <?php the_content(); ?>
-            </div>
-        </div>
 
 <?php endwhile;
 else : endif; ?>
