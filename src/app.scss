@@ -9,11 +9,16 @@ $theme-colors: (
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
 @import 'frontpage';
 @import 'about';
 @import 'main';
-@import 'header';
 @import 'footer';
 @import 'single';
 @import 'sidebar';
 @import 'archive';
+
+
+// HEADERS
+@import 'headers/navbar';
+@import 'headers/frontpage-header';
