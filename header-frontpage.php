@@ -14,6 +14,9 @@
         <a class="logo navbar-brand" href="/">
           <?php echo get_bloginfo('name'); ?>
         </a>    
+
+
+        
         <div class="menu">
           <?php
           wp_nav_menu(
@@ -24,6 +27,7 @@
           );
           ?>
       </div>
+
     </nav>
     </div>
 

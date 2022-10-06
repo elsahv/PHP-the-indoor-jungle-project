@@ -13,7 +13,6 @@
 
 
     <nav class="nav-grid">
-
         <a class="logo navbar-brand" href="/">
           <?php echo get_bloginfo('name'); ?>
         </a>
