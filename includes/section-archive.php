@@ -12,7 +12,10 @@
                                                 <?php if (has_post_thumbnail()) : ?>
                                                         <img src="<?php the_post_thumbnail_url('blog-small'); ?>" alt="<?php the_title(); ?>" class="img-fluid border-top border-bottom border-2 border-dark">
                                                 <?php endif; ?>
-                                                <div class="card-body"><?php the_excerpt(); ?></div>
+                                                <div class="card-body">
+                                                        <p><?php echo get_the_date('l jS F, Y'); ?></p>
+                                                        <?php the_excerpt(); ?>
+                                                </div>
                                         </a>
 
                                 </div>

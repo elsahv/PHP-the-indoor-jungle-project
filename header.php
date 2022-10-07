@@ -8,29 +8,28 @@
     <title>the Indoor Jungle Project</title>
     <?php wp_head(); ?>
   </head>
+
   <body>
 
 
 
-    <nav class="nav-grid">
-        <a class="logo navbar-brand" href="/">
-          <?php echo get_bloginfo('name'); ?>
-        </a>
+    <nav class="nav-grid border-bottom border-dark border-2">
+      <a class="logo navbar-brand" href="/">
+        <?php echo get_bloginfo('name'); ?>
+      </a>
 
 
 
-        <div class="menu">
-          <?php
-          wp_nav_menu(
-            array(
-              'theme-location' => 'top-menu',
-              'menu_class' => 'navbar',
-            )
-          );
-          ?>
+      <div class="menu">
+        <?php
+        wp_nav_menu(
+          array(
+            'theme-location' => 'top-menu',
+            'menu_class' => 'navbar',
+          )
+        );
+        ?>
       </div>
 
 
     </nav>
-
- 

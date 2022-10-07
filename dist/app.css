@@ -10564,9 +10564,8 @@ textarea.form-control-lg {
   }
 }
 .recent-grid-title {
-  margin-top: 1050px;
   font-size: 30px;
-  padding: 0 10px;
+  padding: 1100px 10px 0;
   width: 100%;
   font-weight: bold;
   text-align: center;
@@ -10574,7 +10573,7 @@ textarea.form-control-lg {
 }
 
 .frontpage-grid {
-  padding: 50px 250px 100px;
+  padding: 30px 250px 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;

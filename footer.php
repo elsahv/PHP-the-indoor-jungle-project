@@ -8,7 +8,13 @@
              <?php dynamic_sidebar('page-sidebar'); ?>
          <?php endif; ?>
      </div>
-     <div class="col bg-danger">logo</div>
+
+     <div class="col bg-danger">
+         <div class="p-5">
+             <h2>Subscribe for post updates</h2>
+             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aperiam, quasi molestiae alias labore accusantium voluptatum assumenda distinctio modi nisi sapiente quo nemo ipsa nesciunt nulla totam obcaecati ad repellendus?</span>
+         </div>
+     </div>
  </div>
 
 

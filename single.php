@@ -43,6 +43,8 @@
 <div class="container">
   <div class="archive-grid-section">
     <section class="left-side p-5">
+      <p><?php echo get_the_date('l jS F, Y'); ?></p>
+
       <?php get_template_part('includes/section', 'content'); ?>
       <?php wp_link_pages(); ?>
     </section>
