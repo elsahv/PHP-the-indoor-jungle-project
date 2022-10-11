@@ -15,9 +15,9 @@
 
 
       <div class="text-light" id="most-recent-content">
-        <div class="most-recent-title" id="most-recent-text"><?php the_title(); ?></div>
+        <div class="most-recent-title text-capitalize" id="most-recent-text"><?php the_title(); ?></div>
         <div class="most-recent-excerpt" id="most-recent-text"> <?php the_excerpt(); ?></div>
-        <a href="<?php the_permalink(); ?>" class="btn btn-primary">Read More</a>
+        <a href="<?php the_permalink(); ?>" class="btn btn-primary border border-dark border-2">Read More</a>
       </div>
 
 

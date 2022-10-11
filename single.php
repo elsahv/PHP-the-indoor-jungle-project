@@ -11,7 +11,7 @@
     $categories = get_the_category();
     foreach ($categories as $cat) : ?>
 
-      <a class="badge bg-danger text-secondary p-2 text-decoration-none" style="font-size: 18px" href="<?php echo get_category_link($cat->term_id); ?>">
+      <a class="badge bg-danger text-maroon p-2 text-decoration-none" style="font-size: 18px" href="<?php echo get_category_link($cat->term_id); ?>">
         <?php echo $cat->name; ?>
       </a>
     <?php endforeach; ?>
