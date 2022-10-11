@@ -10,16 +10,10 @@
   </head>
 
   <body>
-
-
-
-    <nav class="nav-grid border-bottom border-dark border-2">
+    <nav class="nav-grid mb-2">
       <a class="logo navbar-brand" href="/">
         <?php echo get_bloginfo('name'); ?>
       </a>
-
-
-
       <div class="menu">
         <?php
         wp_nav_menu(
@@ -30,6 +24,4 @@
         );
         ?>
       </div>
-
-
     </nav>
