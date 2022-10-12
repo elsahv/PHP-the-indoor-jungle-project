@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="border-bottom border-top border-2 border-dark bg-secondary">
+<div class="border-bottom border-top border-2 border-maroon bg-secondary">
   <h2 class="text-light text-center p-5">
     <?php echo single_cat_title(); ?>
   </h2>
