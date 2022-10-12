@@ -12,7 +12,12 @@
      <div class="col bg-danger">
          <div class="p-5">
              <h2>Subscribe for post updates</h2>
-             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aperiam, quasi molestiae alias labore accusantium voluptatum assumenda distinctio modi nisi sapiente quo nemo ipsa nesciunt nulla totam obcaecati ad repellendus?</span>
+             <p>I also maintain a weekly newsletter about my other development and blogging projects, including post updates from the Indoor Jungle Project. Sign up for updates sent straight to your inbox</p>
+             <p>Not interested in yet another email newsletter? You can also read it for free
+                 <a target="_blank" href="https://elsahovey.com/newsletter" rel="noreferrer" style="color: #621708">
+                     here
+                 </a>
+             </p>
          </div>
      </div>
  </div>
