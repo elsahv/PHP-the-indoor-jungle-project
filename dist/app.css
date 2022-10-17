@@ -10651,11 +10651,47 @@ textarea.form-control-lg {
 }
 .recent-grid-title {
   font-size: 30px;
-  padding: 1100px 10px 0;
+  padding: 380px 10px 0;
+  margin-top: 600px;
   width: 100%;
   font-weight: bold;
   text-align: center;
   text-decoration: underline;
+}
+@media only screen and (max-width: 1024px) {
+  .recent-grid-title {
+    margin-top: 1000px;
+  }
+}
+@media only screen and (max-width: 834px) {
+  .recent-grid-title {
+    margin-top: 820px;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .recent-grid-title {
+    margin-top: 700px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .recent-grid-title {
+    margin-top: 650px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .recent-grid-title {
+    margin-top: 590px;
+  }
+}
+@media only screen and (max-width: 531px) {
+  .recent-grid-title {
+    padding-top: 300px;
+  }
+}
+@media only screen and (max-width: 384px) {
+  .recent-grid-title {
+    padding-top: 220px;
+  }
 }
 
 .frontpage-grid {
