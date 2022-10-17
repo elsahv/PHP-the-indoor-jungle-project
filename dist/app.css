@@ -10860,7 +10860,7 @@ footer {
 }
 @media only screen and (max-width: 531px) {
   .logo {
-    font-size: 28px;
+    font-size: 23px;
   }
 }
 
@@ -10909,19 +10909,31 @@ footer {
 }
 
 .most-recent-img {
+  width: 100%;
+  height: 100%;
   z-index: 1;
   position: absolute;
   top: 0;
-  margin-bottom: 200px;
+  overflow: hidden;
 }
 
 #most-recent-content {
   position: absolute;
   left: 0;
-  top: 0;
-  margin-top: 600px;
+  bottom: 0;
+  margin-bottom: 100px;
   z-index: 30;
   padding: 0 70px;
+}
+@media only screen and (max-width: 1024px) {
+  #most-recent-content {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 531px) {
+  #most-recent-content {
+    padding: 0 20px;
+  }
 }
 
 #most-recent-text {
@@ -10931,7 +10943,17 @@ footer {
 .most-recent-title {
   font-size: 45px;
 }
+@media only screen and (max-width: 600px) {
+  .most-recent-title {
+    font-size: 25px;
+  }
+}
 
 .most-recent-excerpt {
   font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .most-recent-excerpt {
+    font-size: 16px;
+  }
 }
