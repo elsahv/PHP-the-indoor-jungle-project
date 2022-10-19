@@ -2,7 +2,7 @@
 
 .recent-grid-title {
     font-size: 30px;
-    padding: 380px 10px 0;
+    padding: 350px 10px 20px;
     margin-top: 600px;
     width: 100%;
     font-weight: bold;
@@ -37,7 +37,7 @@
 }
 
 .frontpage-grid {
-    padding: 30px 250px 100px;
+    padding: 10px 320px 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;

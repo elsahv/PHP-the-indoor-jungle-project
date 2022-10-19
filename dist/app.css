@@ -10651,7 +10651,7 @@ textarea.form-control-lg {
 }
 .recent-grid-title {
   font-size: 30px;
-  padding: 380px 10px 0;
+  padding: 350px 10px 20px;
   margin-top: 600px;
   width: 100%;
   font-weight: bold;
@@ -10695,7 +10695,7 @@ textarea.form-control-lg {
 }
 
 .frontpage-grid {
-  padding: 30px 250px 100px;
+  padding: 10px 320px 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
@@ -10813,6 +10813,7 @@ footer {
 }
 
 .archive-grid-section {
+  padding: 0 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "ls ls ls rs";
@@ -10855,6 +10856,10 @@ footer {
   .archive-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.mailchimp-form-title {
+  margin-bottom: 15px;
 }
 
 .nav-grid {

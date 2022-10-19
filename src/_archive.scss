@@ -1,5 +1,6 @@
 // ASIDE
 .archive-grid-section {
+    padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -45,4 +46,9 @@
     @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
     }
+}
+
+
+.mailchimp-form-title {
+    margin-bottom: 15px;
 }

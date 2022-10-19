@@ -53,7 +53,7 @@ register_nav_menus(
 // Custom Image Sizes
 add_image_size('blog-fullscreen', 1920, 1200, false);
 add_image_size('blog-large', 1200, 600, false);
-add_image_size('blog-small', 500, 400, true);
+add_image_size('blog-small', 400, 300, true);
 
 
 
