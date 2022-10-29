@@ -10,7 +10,7 @@
 
 
       <?php if (has_post_thumbnail()) : ?>
-        <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="">
+        <img src="<?php the_post_thumbnail_url('blog-fullscreen'); ?>" alt="<?php the_title(); ?>" class="">
       <?php endif; ?>
 
 
