@@ -10702,11 +10702,15 @@ textarea.form-control-lg {
 }
 @media only screen and (max-width: 1024px) {
   .frontpage-grid {
-    grid-template-columns: repeat(2, 1fr);
     padding: 20px 10px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 834px) {
+  .frontpage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 531px) {
   .frontpage-grid {
     grid-template-columns: 1fr;
   }
@@ -10716,14 +10720,52 @@ textarea.form-control-lg {
   list-style-type: none;
 }
 
-.banner {
-  height: 400px;
-  width: 100%;
-  background: teal;
-}
-
 #about-images {
   border: solid 2px black;
+}
+
+.about-section {
+  margin-top: 95px;
+  border-top: solid 2px #000;
+  padding: 50px 80px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "ls ls ls rs";
+}
+@media only screen and (max-width: 1024px) {
+  .about-section {
+    padding: 50px 40px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "ls" "rs";
+  }
+}
+@media only screen and (max-width: 800px) {
+  .about-section {
+    margin-top: 130px;
+    padding: 50px 0;
+  }
+}
+
+.about-left-side {
+  margin-left: 90px;
+  grid-area: ls;
+  margin-right: 100px;
+}
+@media only screen and (max-width: 1024px) {
+  .about-left-side {
+    margin: 0;
+  }
+}
+
+.about-right-side {
+  border: solid 2px black;
+  grid-area: rs;
+}
+.about-right-side li {
+  list-style: none;
+}
+.about-right-side li a {
+  color: #000;
 }
 
 * {
@@ -10812,21 +10854,40 @@ footer {
   list-style: none;
 }
 
+#category-banner {
+  margin-top: 100px;
+}
+@media only screen and (max-width: 1024px) {
+  #category-banner {
+    margin-top: 130px;
+  }
+}
+
 .archive-grid-section {
-  padding: 0 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "ls ls ls rs";
 }
 @media only screen and (max-width: 1024px) {
   .archive-grid-section {
+    padding: 50px 20px 0;
     grid-template-columns: 1fr;
     grid-template-areas: "ls" "rs";
+  }
+}
+@media only screen and (max-width: 531px) {
+  .archive-grid-section {
+    padding: 50px 0 0 0;
   }
 }
 
 .left-side {
   grid-area: ls;
+}
+@media only screen and (max-width: 1024px) {
+  .left-side {
+    margin: 0;
+  }
 }
 
 .right-side {
@@ -10845,16 +10906,31 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
+  margin: 0 45px;
 }
 @media only screen and (max-width: 1024px) {
   .archive-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 20px 10px;
+    margin: 0px;
+    padding: 20px 50px;
+  }
+}
+@media only screen and (max-width: 834px) {
+  .archive-grid {
+    padding: 0px;
+    margin: 0;
   }
 }
 @media only screen and (max-width: 600px) {
   .archive-grid {
     grid-template-columns: 1fr;
+    margin: 0 55px;
+  }
+}
+@media only screen and (max-width: 531px) {
+  .archive-grid {
+    margin: 0px;
+    padding: 0;
   }
 }
 
@@ -10863,21 +10939,25 @@ footer {
 }
 
 .nav-grid {
-  padding: 10px 100px 0;
+  padding: 60px 100px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "logo menu menu menu";
 }
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 1024px) {
   .nav-grid {
-    padding: 10px 20px;
+    padding: 60px 50px 0;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .nav-grid {
-    padding: 0;
     grid-template-columns: 1fr;
     grid-template-areas: "logo" "menu";
+  }
+}
+@media only screen and (max-width: 531px) {
+  .nav-grid {
+    padding: 50px 10px;
   }
 }
 
@@ -10888,20 +10968,19 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .logo {
-    font-size: 25px;
+    justify-content: flex-start;
   }
 }
 @media only screen and (max-width: 600px) {
   .logo {
     font-size: 35px;
-    padding-top: 15px;
   }
 }
 @media only screen and (max-width: 531px) {
   .logo {
-    font-size: 23px;
+    font-size: 28px;
   }
 }
 
@@ -10910,9 +10989,10 @@ footer {
   display: flex;
   justify-content: flex-end;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .menu {
-    justify-content: center;
+    justify-content: flex-start;
+    padding-bottom: 100px;
   }
 }
 
@@ -10920,33 +11000,31 @@ footer {
   list-style: none;
 }
 .navbar a {
-  color: #000;
   text-decoration: none;
-  padding: 0 15px;
-  font-size: 20px;
+  padding: 0 30px;
+  font-size: 25px;
 }
 @media only screen and (max-width: 1024px) {
   .navbar a {
-    font-size: 18px;
+    padding: 0 10px;
   }
 }
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 600px) {
   .navbar a {
-    font-size: 17px;
-    padding: 0 5px;
+    font-size: 22px;
   }
+}
+
+#header-text a {
+  color: #000;
+  text-shadow: none;
 }
 
 #frontpage-nav {
   z-index: 100;
   position: absolute;
   top: 0;
-  padding-left: 30px;
-  padding-top: 40px;
-}
-#frontpage-nav a {
-  color: #C6CCB2;
-  text-shadow: 1px 1px 1px #000;
+  width: 100%;
 }
 
 .most-recent-img {
@@ -10957,22 +11035,30 @@ footer {
   top: 0;
   overflow: hidden;
 }
+
 #most-recent-content {
   position: absolute;
   left: 0;
   bottom: 0;
   margin-bottom: 100px;
   z-index: 30;
-  padding: 0 70px;
+  padding: 0 100px;
 }
 @media only screen and (max-width: 1024px) {
   #most-recent-content {
-    padding: 0 40px;
+    margin-bottom: 300px;
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 834px) {
+  #most-recent-content {
+    margin-bottom: 180px;
   }
 }
 @media only screen and (max-width: 531px) {
   #most-recent-content {
     padding: 0 20px;
+    margin-bottom: 100px;
   }
 }
 
@@ -10985,15 +11071,14 @@ footer {
 }
 @media only screen and (max-width: 600px) {
   .most-recent-title {
-    font-size: 25px;
+    font-size: 40px;
   }
 }
 
 .most-recent-excerpt {
   font-size: 20px;
 }
-@media only screen and (max-width: 600px) {
-  .most-recent-excerpt {
-    font-size: 16px;
-  }
+#front-header-text a {
+  color: #C6CCB2;
+  text-shadow: 1px 1px 1px #000;
 }

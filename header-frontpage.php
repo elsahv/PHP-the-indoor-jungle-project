@@ -10,24 +10,25 @@
 </head>
 
 <body>
+  <div id="front-header-text">
+    <div id="frontpage-nav">
+      <nav class="nav-grid">
+        <a class="logo navbar-brand" href="/">
+          <?php echo get_bloginfo('name'); ?>
+        </a>
 
-  <div id="frontpage-nav">
-    <nav class="nav-grid">
-      <a class="logo navbar-brand" href="/">
-        <?php echo get_bloginfo('name'); ?>
-      </a>
 
+        <div class="menu">
+          <?php
+          wp_nav_menu(
+            array(
+              'theme-location' => 'top-menu',
+              'menu_class' => 'navbar',
+            )
+          );
+          ?>
+        </div>
 
-      <div class="menu">
-        <?php
-        wp_nav_menu(
-          array(
-            'theme-location' => 'top-menu',
-            'menu_class' => 'navbar',
-          )
-        );
-        ?>
-      </div>
-
-    </nav>
+      </nav>
+    </div>
   </div>

@@ -2,37 +2,40 @@
 
 
 <!-- SINGLE NAVBAR -->
-<div class="d-flex bg-primary p-4 border-bottom border-dark border-2">
+<div id="category-banner">
+
+  <div class="d-flex bg-primary p-4 border-bottom border-dark border-2">
 
 
-  <!-- CATEGORIES -->
-  <div class="mx-2">
-    <?php
-    $categories = get_the_category();
-    foreach ($categories as $cat) : ?>
+    <!-- CATEGORIES -->
+    <div class="">
+      <?php
+      $categories = get_the_category();
+      foreach ($categories as $cat) : ?>
 
-      <a class="badge bg-danger text-maroon p-2 text-decoration-none" style="font-size: 18px" href="<?php echo get_category_link($cat->term_id); ?>">
-        <?php echo $cat->name; ?>
-      </a>
-    <?php endforeach; ?>
-  </div>
-
-
-  <!-- TAGS -->
-  <div class="pt-1">
-    <?php
-    $tags = get_the_tags();
-    if ($tags) :
-      foreach ($tags as $tag) : ?>
-
-        <a href="<?php echo get_tag_link($tag->term_id); ?>" class="px-1 text-light">
-          <?php echo $tag->name; ?>
+        <a class="badge bg-danger text-maroon p-2 m-1 text-decoration-none" style="font-size: 18px" href="<?php echo get_category_link($cat->term_id); ?>">
+          <?php echo $cat->name; ?>
         </a>
-    <?php endforeach;
-    endif; ?>
+      <?php endforeach; ?>
+    </div>
+
+
+    <!-- TAGS -->
+    <div class="pt-1">
+      <?php
+      $tags = get_the_tags();
+      if ($tags) :
+        foreach ($tags as $tag) : ?>
+
+          <a href="<?php echo get_tag_link($tag->term_id); ?>" class="px-1 text-light">
+            <?php echo $tag->name; ?>
+          </a>
+      <?php endforeach;
+      endif; ?>
+    </div>
+
+
   </div>
-
-
 
 </div>
 

@@ -8,6 +8,7 @@
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
+    
     @media only screen and (max-width: 1024px) {
       margin-top: 1000px;
     }
@@ -43,11 +44,16 @@
     grid-gap: 2em;
 
     @media only screen and (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
   padding: 20px 10px;
     }
 
-    @media only screen and (max-width: 600px) {
+
+    @media only screen and (max-width: 834px) {
+      grid-template-columns: repeat(2, 1fr);
+      }
+  
+
+    @media only screen and (max-width: 531px) {
     grid-template-columns: 1fr;
     }
 }

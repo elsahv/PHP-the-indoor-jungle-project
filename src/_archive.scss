@@ -1,21 +1,38 @@
-// ASIDE
+    // ASIDE
+#category-banner {
+    margin-top: 100px;
+    @media only screen and (max-width: 1024px) {
+        margin-top: 130px;
+
+    }
+}
+
 .archive-grid-section {
-    padding: 0 20px;
+    // background: teal;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
     'ls ls ls rs';
     
     @media only screen and (max-width: 1024px) {
+    padding: 50px 20px 0;
         grid-template-columns: 1fr;
         grid-template-areas:
         'ls'
         'rs';
     }
+    
+
+    @media only screen and (max-width: 531px) {
+        padding: 50px 0 0 0;
+    }
 }
 
 .left-side {
     grid-area: ls;
+    @media only screen and (max-width: 1024px) {
+        margin: 0;
+    }
 }
 
 .right-side {
@@ -37,15 +54,32 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;
+    margin: 0 45px;
+
 
     @media only screen and (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
-  padding: 20px 10px;
+      margin: 0px;
+    padding: 20px 50px;
+
     }
+
+
+    @media only screen and (max-width: 834px) {
+      padding: 0px;
+      margin: 0;
+        }
+
 
     @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
+    margin: 0 55px;
     }
+
+    @media only screen and (max-width: 531px) {
+        margin: 0px;
+        padding: 0;
+        }
 }
 
 

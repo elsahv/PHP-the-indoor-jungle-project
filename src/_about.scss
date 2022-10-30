@@ -1,15 +1,54 @@
-
-.banner {
-  height: 400px;
-  width: 100%;
-  background: teal;
-}
-
-
 #about-images{
   border: solid 2px black;
 }
  
- 
+
+
+.about-section {
+  margin-top: 95px;
+  border-top: solid 2px #000;
+  // background: teal;
+  padding: 50px 80px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  'ls ls ls rs';
+  
+  @media only screen and (max-width: 1024px) {
+    padding: 50px 40px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      'ls'
+      'rs';
+  }
+  
+  @media only screen and (max-width: 800px) {
+    margin-top: 130px;
+    padding: 50px 0;
+
+  }
+
+}
+
+.about-left-side {
+  margin-left: 90px;
+  grid-area: ls;
+  margin-right: 100px;
+  @media only screen and (max-width: 1024px) {
+      margin: 0;
+  }
+}
+
+.about-right-side {
+  border: solid 2px black;
+  grid-area: rs;
+  li {
+      list-style: none;
+      a { 
+        color: #000;
+      }
+  }
+}
+
 
  

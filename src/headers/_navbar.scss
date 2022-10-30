@@ -1,22 +1,27 @@
  .nav-grid {
-    padding: 10px 100px 0;
+    padding: 60px 100px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
     'logo menu menu menu';
     
-    @media only screen and (max-width: 834px) {
-        padding: 10px 20px;
+    @media only screen and (max-width: 1024px) {
+      padding: 60px 50px 0;
     }
 
 
-    @media only screen and (max-width: 600px) {
-        padding: 0;
+    @media only screen and (max-width: 768px) {
         grid-template-columns: 1fr;
         grid-template-areas:
         'logo'
         'menu';
     }
+
+
+    @media only screen and (max-width: 531px) {
+      padding: 50px 10px;
+
+  }
  }
 
 
@@ -26,18 +31,17 @@
     text-transform: capitalize;
     display: flex;
     justify-content: center;
-   
-    @media only screen and (max-width: 1024px) {
-      font-size: 25px
+ 
+    @media only screen and (max-width: 768px) {
+      justify-content: flex-start;
     }
 
     @media only screen and (max-width: 600px) {
         font-size: 35px;
-        padding-top: 15px;
       }
 
       @media only screen and (max-width: 531px) {
-        font-size: 23px;
+        font-size: 28px;
       }
  }
 
@@ -47,8 +51,10 @@
     justify-content: flex-end;
 
        
-    @media only screen and (max-width: 600px) {
-        justify-content: center;
+    @media only screen and (max-width: 768px) {
+        justify-content: flex-start;
+        padding-bottom: 100px;
+
       }
  }
 
@@ -57,30 +63,29 @@
  .navbar {
     list-style: none;
         a {
-            color: #000;
             text-decoration: none;
-            padding: 0 15px;
-            font-size: 20px;
-
+            padding: 0 30px;
+            font-size: 25px;
 
             @media only screen and (max-width: 1024px) {
-                font-size: 18px
-              }
-
+              padding: 0 10px;
+            }
           
-
-
-              @media only screen and (max-width: 834px) {
-                           font-size: 17px;
-                        padding: 0 5px;
-
-                  }
+              @media only screen and (max-width: 600px) {
+                font-size: 22px;
+          
+              }
         }
-
-   
-
 }
 
+
+#header-text {
+  a {
+    color: #000;
+    text-shadow: none;
+
+  }
+}
 
 
 
