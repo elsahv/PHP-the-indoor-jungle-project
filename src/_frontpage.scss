@@ -2,7 +2,7 @@
 
 .recent-grid-title {
     font-size: 30px;
-    padding: 350px 10px 20px;
+    padding: 350px 10px 0px;
     margin-top: 600px;
     width: 100%;
     font-weight: bold;
@@ -10,22 +10,13 @@
     text-decoration: underline;
     
     @media only screen and (max-width: 1024px) {
-      margin-top: 1000px;
+      margin-top: 800px;
     }
-
-    @media only screen and (max-width: 834px) {
-      margin-top: 820px;
-    }
-
+ 
     @media only screen and (max-width: 810px) {
-      margin-top: 700px;
+      margin-top: 730px;
     }
-
-
-    @media only screen and (max-width: 768px) {
-      margin-top: 650px;
-    }
-
+ 
     @media only screen and (max-width: 600px) {
       margin-top: 590px;
     }

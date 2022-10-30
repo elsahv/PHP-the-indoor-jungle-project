@@ -10651,7 +10651,7 @@ textarea.form-control-lg {
 }
 .recent-grid-title {
   font-size: 30px;
-  padding: 350px 10px 20px;
+  padding: 350px 10px 0px;
   margin-top: 600px;
   width: 100%;
   font-weight: bold;
@@ -10660,22 +10660,12 @@ textarea.form-control-lg {
 }
 @media only screen and (max-width: 1024px) {
   .recent-grid-title {
-    margin-top: 1000px;
-  }
-}
-@media only screen and (max-width: 834px) {
-  .recent-grid-title {
-    margin-top: 820px;
+    margin-top: 800px;
   }
 }
 @media only screen and (max-width: 810px) {
   .recent-grid-title {
-    margin-top: 700px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .recent-grid-title {
-    margin-top: 650px;
+    margin-top: 730px;
   }
 }
 @media only screen and (max-width: 600px) {
