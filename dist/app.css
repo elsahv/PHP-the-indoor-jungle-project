@@ -10715,7 +10715,7 @@ textarea.form-control-lg {
 }
 
 .about-section {
-  margin-top: 95px;
+  margin-top: 115px;
   border-top: solid 2px #000;
   padding: 50px 80px 0;
   display: grid;
@@ -10845,7 +10845,7 @@ footer {
 }
 
 #category-banner {
-  margin-top: 100px;
+  margin-top: 115px;
 }
 @media only screen and (max-width: 1024px) {
   #category-banner {
@@ -10929,7 +10929,7 @@ footer {
 }
 
 .nav-grid {
-  padding: 60px 100px 0;
+  padding: 60px 100px 0px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "logo menu menu menu";
